@@ -7,7 +7,6 @@ print("Start downsampleByCluster.R")
 rm(list = ls())
 .libPaths( c( .libPaths(), "~/local/R_libs/") )
 
-library(ZunderPipelineFunctions)
 library(data.table)
 library(dplyr)
 
