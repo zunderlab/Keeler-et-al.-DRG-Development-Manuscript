@@ -181,7 +181,11 @@ findMarkerGenesCytof <- function(exprs_mat, clusters_in, test) {
   # Set default identity to be cluster.id
   Idents(object = exprs_seurat) <- exprs_seurat@meta.data$cluster_id
   # Find markers for all clusters, set do.print=TRUE to output progress
-  markers.all <- FindAllMarkers(exprs_seurat,test.use = test, do.print = TRUE, thresh.use=0.0)
+  markers.all <- FindAllMarkers(exprs_seurat,
+                                test.use = test, 
+                               return.thresh = 1.0,
+                               logfc.threshold = 0.0,
+                               min.pct=0.0)
   
   return(markers.all)
 }
