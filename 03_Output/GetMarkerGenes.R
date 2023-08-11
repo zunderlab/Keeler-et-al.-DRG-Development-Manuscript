@@ -197,7 +197,7 @@ INPUT.FOLDER <- getwd()
 OUTPUT.FOLDER <- INPUT.FOLDER
 CONCATTRANSFORMED.FILENAME <- "/Concat_Transformed.csv"
 CLUSTERS.FILENAME <- "/clusters.csv"
-MARKER.SIG.TEST <- "t" #"roc"
+MARKER.SIG.TEST <- "t" #“roc”, “wilcox”, “LR”, and “t”
 
 MARKERS.OUT.FILENAME <- "Clusters_Extracted.csv"
 
